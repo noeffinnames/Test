@@ -6,16 +6,31 @@ public class MainProgram {
 		// TODO Auto-generated method stub
 		System.out.println("Hello World!");
 		printWords();
+		
+		Triangle t = new Triangle();
+		Square s = new Square();
+		
+		showShapeDetails(t);
+		showShapeDetails(s);
+				
 	}
 	
 	private static void printWords() {
-		printWord("snuh");
-		printWord("bah");
-		printWord("hee");
+		// adding some further changes that will be committed.
+		printString("snuh");
+		printString("bah");
+		printString("hee");
 	}
 	
-	private static void printWord(String word) {
+	private static void printString(String word) {
 		System.out.println(word);
+	}
+	
+	private static void showShapeDetails(Shape shape) {
+		printString("The name of the shape is:" + shape.getName());
+		printString("this shape has " + shape.getNumberOfSides() + " sides");
+		printString("It looks like this:");
+		shape.drawShape();
 	}
 
 }
