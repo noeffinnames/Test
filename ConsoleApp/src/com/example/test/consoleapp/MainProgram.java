@@ -9,9 +9,11 @@ public class MainProgram {
 		
 		Triangle t = new Triangle();
 		Square s = new Square();
+		Circle c = new Circle();
 		
 		showShapeDetails(t);
 		showShapeDetails(s);
+		showShapeDetails(c);
 				
 	}
 	
